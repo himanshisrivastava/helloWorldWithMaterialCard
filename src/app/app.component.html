@@ -1,0 +1,26 @@
+<md-toolbar color="primary">
+  <button md-icon-button [mdMenuTriggerFor]="menu" aria-label="Open basic menu">
+    <md-icon>menu</md-icon>
+  </button>
+  <md-menu #menu="mdMenu">
+    <br>
+    <button md-button (click)="start.close()">Close</button>
+    <br>
+    <button md-button (click)="start.close()">Settings</button>
+    <button md-menu-item *ngFor="let item of items" (click)="select(item.text)" [disabled]="item.disabled">
+
+    </button>
+  </md-menu>
+  <span>Hello World</span>
+</md-toolbar>
+
+<div class="demo-card-container">
+    <md-card>
+    <md-card-title-group>
+      <md-card-title>My Card title</md-card-title>
+      <md-card-subtitle>This is my first material card</md-card-subtitle>
+
+    </md-card-title-group>
+  </md-card>
+</div>
+
