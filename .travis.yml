@@ -6,8 +6,9 @@ install:
   - npm install
 
 scripts:
+  - node_modules/karma/bin/karma start karma.conf.js --single-run
   - ng build
   - ng test
   - ng e2e
   
-browsers: ['Chrome']
+
