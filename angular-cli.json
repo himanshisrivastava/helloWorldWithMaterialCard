@@ -32,7 +32,8 @@
   "packages": [],
   "e2e": {
     "protractor": {
-      "config": "./protractor.conf.js"
+      "config": "./protractor.conf.js",
+      "keepAlive": false
     }
   },
   "test": {
