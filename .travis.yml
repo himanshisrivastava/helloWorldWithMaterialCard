@@ -8,9 +8,9 @@ install:
   - npm install
 
 scripts:
-  - ng build
-  - ng test
-  - ng e2e
+   - ng build
+   - ng test --watch=false --code-coverage
+   - npm run e2e -- --baseUrl="http://localhost:9090/"
 
 os:
   - linux
